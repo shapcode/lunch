@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lunch_graph"
+    app:startDestination="@id/restaurantSearchFragment">
+
+    <fragment
+        android:id="@+id/restaurantSearchFragment"
+        android:name="com.shapcode.lunch.views.search.RestaurantSearchFragment"
+        android:label="RestaurantSearchFragment" >
+        <action
+            android:id="@+id/action_restaurantSearchFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.shapcode.lunch.views.detail.RestaurantDetailFragment"
+        android:label="RestaurantDetailFragment" >
+        <argument
+            android:name="restaurantId"
+            app:argType="string" />
+    </fragment>
+</navigation>

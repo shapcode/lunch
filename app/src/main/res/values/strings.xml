@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Lunch Finder</string>
+    <string name="app_name_compose">Lunch (Compose)</string>
+    <string name="app_name_views">Lunch (Views)</string>
+
+    <string name="location_services">Location Services</string>
+    <string name="location_services_message">
+        In order to find restaurants near you,
+        please allow us to use your location.
+    </string>
+
+    <string name="search">Search</string>
+    <string name="search_for_a_restaurant">Search for a restaurant</string>
+
+    <string name="list">List</string>
+    <string name="map">Map</string>
+
+    <string name="state_favorite">Favorite</string>
+    <string name="state_favorite_not">Not Favorite</string>
+    <string name="content_description_rating_reviews">%.1f rating, based on %d reviews.</string>
+
+    <string name="reviews">(%d)</string>
+    <string name="price_level">%s • %s</string>
+    <string name="price_level_description_0">Free</string>
+    <string name="price_level_description_1">Inexpensive</string>
+    <string name="price_level_description_2">Moderate</string>
+    <string name="price_level_description_3">Expensive</string>
+    <string name="price_level_description_4">Very Expensive</string>
+
+    <string name="website">Website</string>
+</resources>
