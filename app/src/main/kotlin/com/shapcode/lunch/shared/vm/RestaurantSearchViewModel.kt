@@ -44,10 +44,10 @@ class RestaurantSearchViewModel @Inject constructor(
         viewModelScope.launch {
             val favorites = favoriteRepo.getAllFavorites()
             _viewState.update { it.copy(favorites = favorites) }
-
-            val lastLocation = locationProviderClient.lastLocation.await()
-            location = LatLng(lastLocation.latitude, lastLocation.longitude)
-            searchRestaurants("")
+            locationProviderClient.lastLocation.await()?.let {
+                location = LatLng(it.latitude, it.longitude)
+                searchRestaurants("")
+            }
         }
     }
 

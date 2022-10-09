@@ -35,7 +35,7 @@ class RestaurantMapFragment : Fragment() {
         ownerProducer = { requireParentFragment() }
     )
 
-    lateinit var mapFragment: SupportMapFragment
+    private lateinit var mapFragment: SupportMapFragment
     var map: GoogleMap? = null
 
     var restaurantMap: Map<String, Restaurant> = emptyMap()

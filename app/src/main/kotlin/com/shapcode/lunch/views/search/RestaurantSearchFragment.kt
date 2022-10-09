@@ -25,7 +25,7 @@ class RestaurantSearchFragment : Fragment() {
 
     private val viewModel: RestaurantSearchViewModel by viewModels()
 
-    lateinit var viewTypeButton: Button
+    private lateinit var viewTypeButton: Button
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_restaurant_search, container, false)

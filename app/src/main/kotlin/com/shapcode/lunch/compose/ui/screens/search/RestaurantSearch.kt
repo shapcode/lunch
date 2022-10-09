@@ -19,6 +19,14 @@ import com.shapcode.lunch.R
 import com.shapcode.lunch.core.model.Restaurant
 import com.shapcode.lunch.shared.vm.RestaurantSearchViewModel
 
+internal val priceLevelDescriptions = listOf(
+    R.string.price_level_description_0,
+    R.string.price_level_description_1,
+    R.string.price_level_description_2,
+    R.string.price_level_description_3,
+    R.string.price_level_description_4,
+)
+
 @Composable
 fun RestaurantSearch(
     viewModel: RestaurantSearchViewModel = hiltViewModel(),

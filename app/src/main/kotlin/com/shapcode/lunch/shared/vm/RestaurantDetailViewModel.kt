@@ -4,17 +4,12 @@ import android.annotation.SuppressLint
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.shapcode.lunch.core.api.model.LatLng
 import com.shapcode.lunch.core.model.Restaurant
 import com.shapcode.lunch.core.repo.FavoriteRepo
 import com.shapcode.lunch.core.repo.RestaurantRepo
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
 @HiltViewModel

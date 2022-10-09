@@ -28,11 +28,12 @@ android {
     }
 
     buildFeatures {
+        viewBinding true
         compose true
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.0"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
 
     compileOptions {
@@ -50,22 +51,22 @@ dependencies {
 
     implementation project(":core")
 
-    implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.activity:activity-ktx:1.5.1'
-    implementation 'androidx.fragment:fragment-ktx:1.5.2'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.activity:activity-ktx:1.6.0'
+    implementation 'androidx.fragment:fragment-ktx:1.5.3'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.1"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.1"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.2"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.2"
 
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha01"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha01"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha01"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha02"
 
-    implementation 'io.coil-kt:coil:2.2.0'
+    implementation 'io.coil-kt:coil:2.2.1'
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4'
@@ -84,18 +85,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+    androidTestImplementation 'androidx.test:core-ktx:1.4.0'
+
     androidTestImplementation  'com.google.dagger:hilt-android-testing:2.43.1'
     kaptAndroidTest 'com.google.dagger:hilt-compiler:2.43.1'
 
     testImplementation 'com.google.dagger:hilt-android-testing:2.43.1'
+
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+    testImplementation "org.mockito.kotlin:mockito-kotlin:4.0.0"
+
     kaptTest 'com.google.dagger:hilt-compiler:2.43.1'
 
-    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.2.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.0'
 }
 
 dependencies {
     // Integration with activities
-    implementation 'androidx.activity:activity-compose:1.5.1'
+    implementation 'androidx.activity:activity-compose:1.6.0'
     // Compose Material Design
     implementation 'androidx.compose.material:material:1.2.1'
     // Animations
@@ -105,9 +112,9 @@ dependencies {
     // Integration with ViewModels
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
     implementation 'androidx.compose.runtime:runtime-livedata:1.2.1'
-    implementation 'io.coil-kt:coil-compose:2.2.0'
+    implementation 'io.coil-kt:coil-compose:2.2.1'
 
-    implementation "androidx.navigation:navigation-compose:2.5.1"
+    implementation "androidx.navigation:navigation-compose:2.5.2"
     implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
 
     // UI Tests

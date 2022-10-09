@@ -140,7 +140,12 @@ fun RestaurantListItem(
                     Spacer(modifier = Modifier.width(4.dp))
                     Text("(${restaurant.reviews})")
                 }
-                Text("$".repeat(restaurant.priceLevel))
+                Text(
+                    stringResource(R.string.price_level,
+                        "$".repeat(restaurant.priceLevel),
+                        stringResource(priceLevelDescriptions[restaurant.priceLevel])
+                    )
+                )
             }
             IconButton(
                 onClick = { onToggleFavorite(restaurant) },
